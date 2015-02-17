@@ -29,7 +29,17 @@ namespace PracticeUsingIfElse
         {
             if (enableCheckbox.IsChecked == true)
             {
-                labelToChange.Text = "Press the button to change my text";
+                if (labelToChange.Text == "Right")
+                {
+                    labelToChange.Text = "Left";
+                    labelToChange.HorizontalAlignment = HorizontalAlignment.Left;
+
+                }
+                else
+                {
+                    labelToChange.Text = "Right";
+                    labelToChange.HorizontalAlignment = HorizontalAlignment.Right;
+                }
             }
             else
             {
